@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+    <div class="from-container">
+        <form>
+            <img src="images/logo.png" class="logo" />
+            <div class="input-container">
+                <label for="name" class="titles">Nombre:</label>
+                <input type="text" id="name" class="form-input" required>
+            </div>
+            <div class="input-container">
+                <label for="email" class="titles">Correo:</label>
+                <input type="email" id="email" class="form-input" required>
+            </div>
+            <div class="input-container">
+                <label for="phone" class="titles">Celular:</label>
+                <input type="tel" id="phone" class="form-input" required>
+            </div>
+            <div class="input-container">
+                <label for="locacion" class="titles">Sede:</label>
+                <select name="location" class="form-input" id="location">
+                    <option value="">Elige una opción</option>
+                    <option value="pance" id="pance">Pance</option> 
+                    <option value="ciudad-jardin" id="ciudad-jardin">Ciudad Jardin</option>
+                    <option value="granada"id="granada">Granada</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <input type="checkbox" id="privacy-agreement" class="form-checkbox" required>
+                <label for="privacy-agreement">Acepto términos y condiciones.</label>
+            </div>
+            <button type="submit" id="submit-btn" class="form-btn" disabled>Enviar</button>
+        </form>
+        <button type="button" id="nolead-btn" class="form-btn" >No estoy interesado</button>
+    </div>
+    <style>
+        body {
+          background-image: url("./images/form.png");
+        }
+      </style>
+    <script defer src="view.js"></script>
+    <script defer src="controller.js"></script>
+
+</body>
+
+</html>

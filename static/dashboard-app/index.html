@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section1>
+        <div class="header">
+          <div class="container-header">
+            <img src="images/logo.png" class="logo" />
+            <input type="text" class="searchbox" placeholder="   search" />
+          </div>
+        </div>
+      </section1>
+
+      <section>
+        <img src="images/menu.png" class="menu" />
+        <div class="sub-containers">
+            <div class="sub-container2">
+                <div class="total-leads">
+
+                </div>
+                <div class="location-status">
+                    <p class="charts-titles">Location Status</p>
+                    <div class="location-subcontainer">
+                        <p class="locations">Ciudad Jardín</p>
+                        <p class="online">Online</p>
+                    </div>
+                    <hr class="solid" style="
+                    padding-top:0px;
+                    padding-bottom:0px;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    ">
+                    <div class="location-subcontainer">
+                        <p class="locations">Granada</p>
+                        <p class="online">Online</p>
+                    </div>
+                    <hr class="solid" style="
+                    padding-top:0px;
+                    padding-bottom:0px;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    ">
+                    <div class="location-subcontainer">
+                        <p class="locations">Pance</p>
+                        <p class="online">Online</p>
+                    </div>    
+                </div>
+                <div class="location-leads">
+                  <p class="charts-titles">Leads per location</p>
+                  <div class="chart-container">
+                    <canvas id="locationChart"></canvas>
+                  </div>
+
+                </div>
+
+            </div>
+            <div class="sub-container4">
+              <div class="sub-container3">
+                <div class="visits-per-day">
+                  <p class="charts-titles">Total visits per day</p>
+                  <div class="chart-container">
+                      <canvas id="myBarChart"></canvas>
+                  </div> 
+              </div>
+              <div class="type-of-device">
+                  <p class="charts-titles">Type of device</p>
+                  <div class="chart-container2">
+                      <canvas id="myDoughnutChart"></canvas>
+                    </div>
+              </div>
+              </div>
+              <div class="last-leads">
+                <p class="charts-titles">Last 5 leads</p>
+                <div class="leads-table">
+                  <table></table>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+
+
+            
+        </div>
+    </section>
+
+
+    </main>
+    <script
+      defer
+      src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+      integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="view.js"></script>
+    <script defer src="controller.js"></script>
+  </body>
+</html>
