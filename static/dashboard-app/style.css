@@ -78,6 +78,12 @@ canvas {
   align-items: center;
 }
 
+.container-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo{
   width: 350px;
   height: 75px;
@@ -85,11 +91,12 @@ canvas {
 }
 .searchbox{
   width: 600px;
-  height: 30px;
+  height: 50px;
   border-radius: 25px;
   border-style: groove;
   border-color: #fff;
   background-color: #F2F0EB;
+  font-size: 16px;
 }
 
 .location-subcontainer{
@@ -117,6 +124,7 @@ canvas {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 0px;
+  white-space: nowrap;
 }
 
 .online{
@@ -163,13 +171,45 @@ canvas {
 }
 
 .total-leads{
+  display: flex;
+  align-items: center;
+  align-items: center;
   margin-top: 0px;
   margin-left: 20px;
   background: #fff;
   width: 630px;
   height: 100px;
   border-radius: 10px;
+  padding-left: 2%;
 }
+
+.title-leads {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #1E3932;
+  white-space: nowrap;
+  margin-right: 20%;
+}
+
+.info-leads {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-leads img {
+  width: 60%;
+}
+
+.info-leads p {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #1E3932;
+    white-space: nowrap;
+}
+
 
 .location-status{
   margin-top: 20px;

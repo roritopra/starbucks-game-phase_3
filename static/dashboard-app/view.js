@@ -70,7 +70,7 @@ class View {
   }
 
   getLocationChart() {
-    const labels = ["Pance", "Ciudad Jardín", "granada"];
+    const labels = ["Pance", "Ciudad Jardín", "Granada"];
     const data = {
       labels: labels,
       datasets: [

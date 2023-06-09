@@ -5,7 +5,7 @@ import fireStoreDB from './firebase-config.js';
 
 dotenv.config();
 let PORT = 5050
-const SERVER_IP = '10.90.9.148'; //Change IP
+const SERVER_IP = '192.168.10.17'; //Change IP
 const app = express();
 app.use(cors());
 
